@@ -4,12 +4,15 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+
 }
 body{
-    margin: 0 auto;
+    margin: auto;
     width: 100%;
     max-width: 1900px;
-    background-color: #E3E3E2;
+    background-color: #f7f7f7;
+    border: 1px solid rgb(212, 212, 212);
+
 }
 
 header{
@@ -17,7 +20,7 @@ header{
 }
 nav{
     background-color: white;
-    width: 85%;
+    width: 100%;
     height: 70px;
     display: flex;
     flex-direction: row;
@@ -25,6 +28,7 @@ nav{
     position: sticky;
     top: 0px;
 }
+
 .logos{
     display: flex;
     flex-direction: row-reverse;
@@ -51,11 +55,10 @@ li:hover{
     cursor: pointer;
 }
 .titulo-header{
-    width: 85%;
-    height: 500px;
+    width: 100%;
+    height: 700px;
     background-image: url("imagens/laranja\ azul\ recorte.png");
     background-size: cover;
-    border-radius: 1%;
     background-repeat: no-repeat;
 }
 .titulo{
@@ -78,216 +81,67 @@ h3{
 }
 
 .imagens-main{
-    margin: 70px 200px 70px;
-    width: 1200px;
-    height: 900px;
+    margin: 70px 300px 70px;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
+    justify-content:center;
 }
 .imagens-main figure{
     width: 300px;
+    height: 300px;
+
+    
 }
 .imagens-main img{
     width: 285px;
+    
 
 }
 .imagens-main img:hover{
     animation: imagemMain 0.25s linear forwards;
     cursor: pointer;
 }
+.corbranca-image{
+    background-color: white;
+    display: flex;
+}
 
 footer{
     width: 100%;
-    height: 100px;
+    height: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
-button{
-    display: none;
+
+.direitos-autorais{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .redes-sociais{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 400px;
+    height: 50px;
     cursor: pointer;
 }
 .redes-sociais img:hover{
     cursor: pointer;
 }
-.direitos-autorais{
-    width: 700px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
 h4{
     font-size: 18px;
+    width: 120px;
+
 }
 p{
-    font-size: 12px;
-    width: 500px;
-}
-@keyframes  imagemMain{
-    from {
-        transform: scale(1.0);
-    }
-    to {
-        transform: scale(1.05);
-    }
-}
+    font-size: 11px;
+    width: 430px;
 
-@media (max-width:480px){
-    body{
-        margin: 0 auto;
-        width: 100%;
-        max-width: 1900px;
-    }
-    
-    header{
-        width: 100%;
-    }
-    nav{
-        background-color: white;
-        width: 100%;
-        height: 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .logos{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
-        width: 310px;
-    }
-    .portflow-icone{
-        width: 100px;
-    }
-    ul{
-        display: none;
-    }
-    .titulo-header{
-        width: 100%;
-        height: 700px;
-        background-image: url("imagens/laranja\ azul\ recorte.png");
-        background-size: cover;
-        background-position: 85%;
-        background-repeat: no-repeat;
-    }
-    .titulo{
-        height: 700px;
-        padding-left: 40px;
-        padding-bottom: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-end;
-    }
-    h1{
-        width: 300px;
-        color: white;
-        font-size: 50px;
-        padding-bottom: 0;
-        margin-bottom: 20px;
-    }
-    h3{
-        color: white;
-        font-size: 20px;
-        font-weight: 300;
-    }
-    main{
-        width: 100%;
-    }
-    .imagens-main{
-        margin-top: 50px;
-        margin-bottom: 0px;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .imagens-main figure{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-    .imagens-main img{
-        width: 380px;
-        margin-bottom: 30px;
-    }
-    .imagens-main img:hover{
-        animation: imagemMain 0.25s linear forwards;
-        cursor: pointer;
-    }
-    
-    footer{
-        width: 100%;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .redes-sociais{
-        background-color: #0082D2;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 380px;
-        height: 55px;
-        cursor: pointer;
-    }
-    .redes-sociais img:hover{
-        cursor: pointer;
-    }
-    .footer-navegacao{
-        width: 100%;
-        height: 120px;
-        justify-content: center;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .direitos-autorais{
-        width: 300px;
-        height: 90px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: flex-start;
-    }
-    button{
-        display: block;
-        width: 80px;
-        height: 30px;
-        background-color: #333333;
-        color: #707070;
-        border: none;
-        font-weight: 600;
-        transition: 0.5s ease ;
-    }
-    button:hover{
-        cursor: pointer;
-        transform: scale(1.05); 
-        font-weight: 700;
-        background-color: #707070;
-        color: #333333;
-    }
-    h4{
-        font-size: 14px;
-    }
-    p{
-        font-size: 11px;
-        width: 220px;
-        height: 100%;
-    }
 }
